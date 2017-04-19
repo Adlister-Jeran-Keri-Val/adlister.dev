@@ -227,9 +227,10 @@ abstract class Model {
         $stmt->execute();
 
         //Store the resultset in a variable named $result
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
 
         // turn each associative array into an instance of the model subclass
+        return $results;
         return array_map(function($result) {
             $instance = new static;
             $instance->attributes = $result;
