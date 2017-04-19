@@ -6,7 +6,7 @@ require_once '../db_connect.php';
 $dbc->exec('DROP TABLE IF EXISTS shoes');
 
 $query = "CREATE TABLE shoes (
-    shoe_id INT UNSIGNED AUTO_INCREMENT,
+    id INT UNSIGNED AUTO_INCREMENT,
     title VARCHAR(240) DEFAULT 'UNKNOWN',
     price DECIMAL(6,2) NOT NULL,
     msrp DECIMAL(6,2) NOT NULL,
@@ -22,7 +22,7 @@ $query = "CREATE TABLE shoes (
     image_location VARCHAR(240) DEFAULT 'UNKNOWN',
     item_description VARCHAR(240) DEFAULT 'UNKNOWN',
     user_id INT UNSIGNED NOT NULL,
-    PRIMARY KEY (shoe_id),
+    PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES users (id)
 )";
 

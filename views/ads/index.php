@@ -34,13 +34,13 @@ $shoes = Shoe::all();
 					<?php foreach($shoes as $shoe): ?>
 					
 						<div class='shoe_box'>
-							<h4><?= $shoe->title ?></h4>
+							<a href = "/show?id=<?=$shoe->id ?>"><?= $shoe->title ?></a>
 							<img src="<?= $shoe->image_location?>" height="100px" width="100px">
 							<p>$<?= $shoe->price ?></p>
 							<p><?= $shoe->location ?></p>
 							<p><?= $shoe->brand ?></p>
 							<p><?= $shoe->size ?></p>
-						</tr>
+						
 						</div>
 					<?php endforeach; ?>	
 				</div>
