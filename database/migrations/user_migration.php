@@ -3,6 +3,8 @@
 $_ENV = include __DIR__ . '/../../.env.php';
 require_once '../db_connect.php';
 
+$dbc->exec('DROP TABLE IF EXISTS shoes');
+
 $dbc->exec('DROP TABLE IF EXISTS users');
 
 $query = 'CREATE TABLE users (
