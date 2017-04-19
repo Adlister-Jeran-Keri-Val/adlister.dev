@@ -90,7 +90,7 @@ $shoe->shoe_condition = 'New';
 $shoe->contact_name = 'Kevin';
 $shoe->contact_number = "223-846-8890";
 $shoe->image_location = "img/shoes5.jpg ";
-$shoe->item_description = "Cool shoes but too narrow, selling in new condition";
+$shoe->item_description = "Cool shoes but too narrow, selling in new condition!";
 $shoe->user_id = '4';
 $shoe->save();
 
