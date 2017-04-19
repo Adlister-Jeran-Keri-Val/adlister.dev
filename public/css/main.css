@@ -17,7 +17,7 @@ h1 {
 	/*padding-bottom: -50px;*/
 }
 
-h2, h3 {
+h2 {
 	/*margin-top: -1px;*/
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 3em;
@@ -326,3 +326,33 @@ button {
 .sign_up_button {
 	font-size: 1.1em;
 }
+
+
+
+/*BROWSE PAGE*/
+.shoe_title {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.shoe_price {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.shoe_location{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.shoe_brand{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.shoe_size{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+
