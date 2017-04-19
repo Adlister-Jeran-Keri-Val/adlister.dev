@@ -18,8 +18,8 @@
 
         <div class="row">
 
-            <h3 class="section-title">CATEGORIES</h3>
-            <p class="see_all"> <a href="#">See all... </a></p>
+            <h2 class="section-title">CATEGORIES</h2>
+            <p class="see_all"> <a href="/browse">See all... </a></p>
             <div class="category_text">
                <div class="column-center">FORMAL</div>
                <div class="column-left">CASUAL</div>
