@@ -3,7 +3,7 @@
         <div class="row">
             <div id = "log_in_border_box" class="col-xs-6 col-xs-offset-6">
                 <h2 class="log_in">LOG IN</h2>
-
+                <br>
                 <?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
                     <div class="alert alert-danger">
                         <p class="error"><?= $_SESSION['ERROR_MESSAGE']; ?></p>
@@ -27,12 +27,12 @@
                         </div>
                         <div class="form-group" id= "log_in_group">
                         <br><br>PASSWORD<br>
-                            <input type="password" class="form-control" id="password" name="password" data-required>
+                            <input type="password" class="form-control" id="log_in_password" name="password" data-required>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                             <br><br>
-                                <button a href="/account" class="log_in_button"> LOG IN </button>
+                                <button a href="/account" class="login_button"> LOG IN </button>
                             </div>
                             <div class="col-sm-6 text-right">
                             <br>

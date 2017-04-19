@@ -18,12 +18,12 @@
 
         <div class="row">
 
-            <h3 class="section-title">CATEGORIES</h3>
-            <p class="see_all"> <a href="#">See all... </a></p>
-            <div class="categories">
-               <div class="column-center">Column center</div>
-               <div class="column-left">Column left</div>
-               <div class="column-right">Column right</div>
+            <h2 class="section-title">CATEGORIES</h2>
+            <p class="see_all"> <a href="/browse">See all... </a></p>
+            <div class="category_text">
+               <div class="column-center">FORMAL</div>
+               <div class="column-left">CASUAL</div>
+               <div class="column-right">CHILLIN</div>
             </div>
 
         </div>
@@ -31,6 +31,6 @@
     </section>
 
     <section id="third_section">
-        <br><br><br><br><br><br>Here is another section.
+        <br><br><br><br><br><br>HERE'S ANOTHER SECTION.
     </section>
 </div>
