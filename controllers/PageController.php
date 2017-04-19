@@ -58,9 +58,15 @@ function pageController()
         case '/edit':  // TODO: put routes here
             $mainView = '../views/users/edit.php';
             break;
+        case '/editshoe':  // TODO: put routes here
+            $mainView = '../views/ads/edit.php';
+            break;
         case '/browse':  // TODO: put routes here
             $mainView = '../views/ads/index.php';
             break;
+        case '/show':  // TODO: put routes here
+            $mainView = '../views/ads/show.php';
+            break;    
         default:   // displays 404 if route not specified above
             $mainView = '../views/404.php';
             break;

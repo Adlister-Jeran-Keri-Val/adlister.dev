@@ -30,6 +30,19 @@ $shoes = Shoe::all();
 			<section class="parks">
 				<?php foreach($shoes as $shoe): ?>
 					
+<!--  YO GIRL DIS MY OG STUFF I JUST COMMENTED IT OUT JUST IN CASE U CAN DELETE IT IF YOU GET ERRYTHING TO WERK -->
+<!-- 						<div class='shoe_box'>
+							<a href = "/show?id=<?=$shoe->id ?>"><?= $shoe->title ?></a>
+							<img src="<?= $shoe->image_location?>" height="100px" width="100px">
+							<p>$<?= $shoe->price ?></p>
+							<p><?= $shoe->location ?></p>
+							<p><?= $shoe->brand ?></p>
+							<p><?= $shoe->size ?></p>
+						
+						</div>
+		
+				</div>
+ -->
 <!-- USE BOOTSTRAP TO CREATE THE COLUMNS FOR THIS! 3 COLUMNS PER ROW! -->
 					<div class='shoe_box'>
 						<a href class="shoe_title"><?= $shoe->title ?></a>
