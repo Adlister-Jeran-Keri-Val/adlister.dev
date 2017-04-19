@@ -21,22 +21,22 @@
 
                     <form method="POST" action="" data-validation data-required-message="This field is required">
 
-                        <div class="form-group">
+                        <div class="form-group" id= "log_in_group">
                         USERNAME<br>
                             <input type="text" class="form-control" id="email_user" name="email_user" data-required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id= "log_in_group">
                         <br><br>PASSWORD<br>
                             <input type="password" class="form-control" id="password" name="password" data-required>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                             <br><br>
-                                <div a href="#" class="log_in_button"> LOG IN </div>
+                                <button a href="/account" class="log_in_button"> LOG IN </button>
                             </div>
                             <div class="col-sm-6 text-right">
                             <br>
-                                <div a href="/signup" class="create_account_button"> CREATE ACCOUNT </div>
+                                <button a href="/signup" class="create_account_button"> CREATE ACCOUNT </button>
                             </div>
                         </div>
                     </form>
