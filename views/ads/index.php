@@ -24,32 +24,26 @@ $shoes = Shoe::all();
 	</head>
 	<body>
 		<main class="container">
-		<h1> ShoeLaLa</h1>
 		<h2 id='welcomez'>Show all shoes</h2>
 		<div class = "box">
 			
 
 			<section class="parks">
-				<table class="table tablz">
-					<tr>
-						<th>Title: </th>
-						<th>Price: </th>
-						<th>Location: </th>
-						<th>Brand: </th>
-						<th>Size: </th>
-					</tr>
-					<?php foreach($shoes as $shoe): ?>
-						<tr>
 
-							<td><?= $shoe->title ?></td>
-							<img src="<?= $shoe->image_location?>">
-							<td><?= $shoe->price ?></td>
-							<td><?= $shoe->location ?></td>
-							<td><?= $shoe->brand ?></td>
-							<td><?= $shoe->size ?></td>
+					
+					<?php foreach($shoes as $shoe): ?>
+					
+						<div class='shoe_box'>
+							<h4><?= $shoe->title ?></h4>
+							<img src="<?= $shoe->image_location?>" height="100px" width="100px">
+							<p>$<?= $shoe->price ?></p>
+							<p><?= $shoe->location ?></p>
+							<p><?= $shoe->brand ?></p>
+							<p><?= $shoe->size ?></p>
 						</tr>
+						</div>
 					<?php endforeach; ?>	
-				</table>
+				</div>
 
 			</section>
 			</div>

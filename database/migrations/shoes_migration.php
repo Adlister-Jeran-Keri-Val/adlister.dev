@@ -8,8 +8,8 @@ $dbc->exec('DROP TABLE IF EXISTS shoes');
 $query = "CREATE TABLE shoes (
     shoe_id INT UNSIGNED AUTO_INCREMENT,
     title VARCHAR(240) DEFAULT 'UNKNOWN',
-    price DECIMAL(4,2) NOT NULL,
-    msrp DECIMAL(4,2) NOT NULL,
+    price DECIMAL(6,2) NOT NULL,
+    msrp DECIMAL(6,2) NOT NULL,
     color VARCHAR(255) DEFAULT 'UNKNOWN',
     style VARCHAR(240) DEFAULT 'UNKNOWN',
     size FLOAT NOT NULL,

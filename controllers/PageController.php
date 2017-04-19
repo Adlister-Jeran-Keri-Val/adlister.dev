@@ -28,7 +28,7 @@ function pageController()
         case '/edit':  // TODO: put routes here
             $mainView = '../views/users/edit.php';
             break;
-        case '/items':  // TODO: put routes here
+        case '/browse':  // TODO: put routes here
             $mainView = '../views/ads/index.php';
             break;
         default:   // displays 404 if route not specified above
