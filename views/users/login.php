@@ -4,7 +4,8 @@
 
         <div class="row">
 
-            <h1 class="section-title">Login To OooLister</h1>
+            <h1 class="section-title">ShoeLaLa</h1>
+            <h2 class="log_in">LOG IN</h2>
 
             <?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
                 <div class="alert alert-danger">
@@ -19,7 +20,7 @@
                 <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
             <?php endif; ?>
 
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-6 col-md-offset-3" id="log_in_box">
 
                 <p>Login with your email/username and password</p>
 
@@ -36,6 +37,7 @@
                             <button type="submit" class="btn btn-primary">Login</button>
                         </div>
                         <div class="col-sm-6 text-right">
+                            <button type="submit" class="btn btn-primary">Login</button>
                             <a href="/signup" class="btn btn-success">Go To Signup</a>
                         </div>
                     </div>

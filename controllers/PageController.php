@@ -16,6 +16,9 @@ function pageController()
         case '/':  // TODO: put routes here
             $mainView = '../views/home.php';
             break;
+        case '/login':  // TODO: put routes here
+            $mainView = '../views/users/login.php';
+            break;
         default:   // displays 404 if route not specified above
             $mainView = '../views/404.php';
             break;
