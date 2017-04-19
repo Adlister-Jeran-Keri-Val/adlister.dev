@@ -19,7 +19,7 @@ function pageController()
         case '/login':  // TODO: put routes here
             $mainView = '../views/users/login.php';
             break;
-        case '/account':  // TODO: put routes here
+      case '/account':  // TODO: put routes here
             $mainView = '../views/users/account.php';
             break;
         case '/signup':  // TODO: put routes here

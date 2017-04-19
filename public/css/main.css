@@ -9,11 +9,12 @@ body {
 
 h1 {
 	background-color: white;
-	font-size: 7em;
+	font-size: 8em;
 	font-family: 'Satisfy', cursive;
 	color: black;
 	text-align: center;
-	margin-top: 18px
+	margin-top: -1px
+	/*padding-bottom: -50px;*/
 }
 
 h2, h3 {
@@ -28,11 +29,22 @@ h2, h3 {
 	padding: 0;
 	margin: 0;
 }
+
 .intro {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 1.2em;
 	color: black;
 	margin-top: -100px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.intro_login {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.6em;
+	font-weight: : bold;
+	color: black;
+	margin-top: -70px;
 	padding-bottom: 20px;
 	text-align: center;
 }
@@ -89,7 +101,7 @@ h2, h3 {
 .nav {
   background-color: black;
   width: 102%;
-  margin-top: -80px;
+  margin-top: -90px;
   margin-bottom: 10px;
   margin-left: -15px;
   /*margin-right: -100px;*/
@@ -164,4 +176,74 @@ h2, h3 {
 	text-align: center;
 	font-size: 2em;
 	padding-top: 10px;
+	height: 500px;
+	width: 100%;
 }
+
+.log_in {
+	/*margin-top: -95px;*/
+}
+
+#log_in_border_box {
+    width: 20%;
+    background-color: black;
+    color: white;
+    /*margin: 0 0 0 382px;*/
+    height: 350px;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    /*vertical-align: middle;*/
+    /*display: inline-block;*/
+}
+
+#log_in_box {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.form-group {
+	font-size: .85em;
+	margin-left: -75px;
+	margin-top: -30px;
+}
+
+#email_user {
+	margin-right: -75px;
+	height: 19px;
+}
+
+#password {
+	margin-right: -75px;
+	height: 19px;
+}
+
+.log_in_button {
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.create_account_button {
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*#username {
+
+}
+
+#password {
+
+}*/
