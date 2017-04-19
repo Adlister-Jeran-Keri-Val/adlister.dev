@@ -1,29 +1,39 @@
 body {
 	background-color: white;
-	font-family: 'BenchNine', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 1em;
 	font-weight: 500px;
+	padding: 0;
+	margin: 0;
 }
 
 h1 {
+	background-color: white;
 	font-size: 7em;
 	font-family: 'Satisfy', cursive;
+	color: black;
 	text-align: center;
-	margin-top: -55px
+	margin-top: 18px
 }
 
 h2, h3 {
 	/*margin-top: -1px;*/
-	font-family: 'BenchNine', sans-serif;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 3em;
 	text-align: center;	
 }
 
+#welcome {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
 .intro {
-	font-family: 'BenchNine', sans-serif;
-	font-size: 1.5em;
-	font-weight: 500px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.2em;
+	color: black;
 	margin-top: -100px;
+	padding-bottom: 20px;
 	text-align: center;
 }
 
@@ -44,7 +54,7 @@ h2, h3 {
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 37px;
-	margin: 0px 37px 0px 37px;
+	margin: 0px 36px 0px 42px;
 
 }
 
@@ -56,7 +66,7 @@ h2, h3 {
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 37px;
-	margin: 0px 0px 0px 20px;
+	margin: 0px 0px 0px 23px;
 }
 
 .column-right {
@@ -67,7 +77,7 @@ h2, h3 {
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 37px;
-	margin: 0px 20px 0px 0px;
+	margin: 0px 18px 0px 0px;
 }
 
 .see_all {
@@ -76,4 +86,82 @@ h2, h3 {
 	margin-top: -45px;
 }
 
+.nav {
+  background-color: black;
+  width: 102%;
+  margin-top: -80px;
+  margin-bottom: 10px;
+  margin-left: -15px;
+  /*margin-right: -100px;*/
+  text-transform: uppercase;
+  font-size: 19px;
+  font-family: 'BenchNine', sans-serif;
+}
 
+.nav ul {
+  list-style: none;
+  text-align: center;
+  margin-right: 100px;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1em;
+  line-height: 30px;
+  height: 30px;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+ 
+.nav a:hover {
+  color: white; /*change nav bar TEXT color when hovered*/
+  outline: none;
+}
+ 
+.nav a.active {
+  color: black;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 35px;
+    line-height: 45px;
+    font-size: 1em;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: .5px;
+  }
+
+#footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bolder;
+	margin-top: 17px;
+	padding-bottom: 14px;
+	height: 25px;
+}
+
+#third_section {
+	text-align: center;
+	font-size: 2em;
+	padding-top: 10px;
+}
