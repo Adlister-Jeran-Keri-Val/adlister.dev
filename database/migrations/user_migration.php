@@ -7,6 +7,7 @@ $dbc->exec('DROP TABLE IF EXISTS shoes');
 
 $dbc->exec('DROP TABLE IF EXISTS users');
 
+
 $query = 'CREATE TABLE users (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     name VARCHAR(240) NOT NULL,

@@ -20,6 +20,7 @@ $query = "CREATE TABLE shoes (
     contact_name VARCHAR(240) DEFAULT 'UNKNOWN',
     contact_number VARCHAR(240) NOT NULL,
     image_location VARCHAR(240) DEFAULT 'UNKNOWN',
+    item_description VARCHAR(240) DEFAULT 'UNKNOWN',
     user_id INT UNSIGNED NOT NULL,
     PRIMARY KEY (shoe_id),
     FOREIGN KEY (user_id) REFERENCES users (id)
