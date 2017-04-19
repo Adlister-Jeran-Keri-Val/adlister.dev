@@ -1,6 +1,9 @@
 <?php
 
 require_once __DIR__ . '/../utils/helper_functions.php';
+require_once __DIR__ . '/../utils/Auth.php';
+require_once __DIR__ . '/../utils/Input.php';
+require_once __DIR__ . '/../utils/Log.php';
 
 function pageController()
 {
@@ -17,6 +20,33 @@ function pageController()
             $mainView = '../views/home.php';
             break;
         case '/login':  // TODO: put routes here
+         // set default classname and placeholders for login inputs
+        $data['inputClass'] = "form-group";
+        $data['usernamePlaceholder'] = "Your user name";
+        $data['background'] = "";
+        // if(Auth::check()) {
+        //     // header("Location: http://adlister.dev/login");
+        //     die();
+        // }
+        // check if user submitted login form
+        if(!empty($_POST)) {
+            $username = Input::get("email_user");
+            $password = Input::get("password");
+            $log = new Log();
+            if(Auth::attempt($username, $password)) {
+                $log->info("$username logged in successfully. ");
+                header("Location: http://adlister.dev/account");
+                die();          
+            } else {
+
+                $log->info("$username failed to log in.");
+                // send a message to the user that their username or password
+                $data['inputClass'] = "form-group has-error";
+                $data['usernamePlaceholder'] = "Username/email or password is incorrect";
+                $data['background'] = "error";
+                $data['username'] = $username;
+            }
+        } 
             $mainView = '../views/users/login.php';
             break;
       case '/account':  // TODO: put routes here

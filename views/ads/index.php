@@ -45,6 +45,7 @@ $shoes = Shoe::all();
 					<?php endforeach; ?>	
 				</div>
 
+
 			</section>
 			</div>
 		</main>

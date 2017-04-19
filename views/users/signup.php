@@ -4,7 +4,7 @@
 
         <div class="row">
 
-            <h1 class="section-title">Signup For OooLister</h1>
+            <h2 class="section-title">SIGN UP FOR SHOELALA</h2>
 
             <div class="col-md-6 col-md-offset-3">
 
@@ -24,16 +24,16 @@
 
                 <form method="POST" action="" data-validation data-required-message="This field is required">
 
-                    <div class="form-group">
+                    <div class="form-group" id= "sign_up_group">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" data-required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id= "sign_up_group">
                         <input type="text" class="form-control" id="email" name="email" placeholder="Email" data-required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id= "sign_up_group">
                         <input type="text" class="form-control" id="username" name="username" placeholder="Username" data-required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id= "sign_up_group">
                         <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
                     </div>
                     <div class="row">
