@@ -1,14 +1,6 @@
     <section id="welcome">
-
         <div class="row">
-
             <div class="col-xs-12">
-
-                <h1 class="text-center">ShoeLaLa</h1>
-                <p class="intro">
-                "It's just men's shoes for the special occasions in a man's life. Like the day that you<br>get married, or the day your wife has a baby, or for just lounging around the house."
-                </p>
-                <br>
                 <p class="intro_login">
                 <form action="#">
                     <center><input type="submit" value="SIGN UP"/> | <input type="submit" value="SIGN IN"/></center>
