@@ -17,7 +17,7 @@ h1 {
 	/*padding-bottom: -50px;*/
 }
 
-h2, h3 {
+h2 {
 	/*margin-top: -1px;*/
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 3em;
@@ -32,7 +32,8 @@ h2, h3 {
 
 .intro {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.3em;
+	font-weight: bold;
 	color: black;
 	margin-top: -100px;
 	padding-bottom: 20px;
@@ -53,9 +54,12 @@ h2, h3 {
 	
 }
 
-#categories {
+.category_text {
 	text-align: center;
+	font-size: 1.5em;
 }
+
+
 
 .column-center {
 	display: inline-block;
@@ -189,7 +193,7 @@ h2, h3 {
     background-color: black;
     color: white;
     /*margin: 0 0 0 382px;*/
-    height: 350px;
+    height: 412px;
     border-style: solid;
     border-width: 2px;
     text-align: center;
@@ -203,23 +207,25 @@ h2, h3 {
 
 #log_in_box {
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 
 #log_in_group {
 	font-size: .85em;
-	margin-left: -75px;
+	margin-left: -150px;
 	margin-top: -30px;
 }
 
 #email_user {
-	margin-right: -75px;
+	margin-right: -150px;
 	height: 19px;
+	width: 50%;
 }
 
-#password {
-	margin-right: -75px;
+#log_in_password {
+	margin-right: -150px;
 	height: 19px;
+	width: 50%;
 }
 
 button {
@@ -252,9 +258,101 @@ button {
 
 }*/
 
-#sign_up_group {
-	font-size: .85em;
-	vertical-align: middle;
-	/*margin-left: -15px;*/
-	/*margin-top: -30px;*/
+#sign_up_border_box {
+    width: 24%;
+    background-color: black;
+    color: white;
+    /*margin: 0 0 0 382px;*/
+    height: 535px;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    /*vertical-align: middle;*/
+    /*display: inline-block;*/
 }
+
+#sign_up_group {
+	font-size: 1.09em;
+	margin-left: -200px;
+	margin-top: 0px;
+}
+
+#email_sign_up_group {
+	font-size: 1.09em;
+	margin-left: -231px;
+	margin-top: 0px;
+}
+
+#sign_up_name {
+	margin-right: -200px;
+	margin-bottom: 8px;
+	height: 19px;
+	width: 50%;
+}
+
+#sign_up_username {
+	margin-right: -200px;
+	margin-bottom: 8px;
+	height: 19px;
+	width: 50%;
+}
+
+#sign_up_email {
+	margin-right: -230px;
+	margin-bottom: 8px;
+	height: 19px;
+	width: 47.5%;
+}
+
+#sign_up_password {
+	margin-right: -200px;
+	margin-bottom: 8px;
+	height: 19px;
+	width: 50%;
+}
+
+.sign_up_info {
+	margin-top: -30px;
+}
+
+.log_in_button {
+	font-size: 1.1em;
+}
+
+.sign_up_button {
+	font-size: 1.1em;
+}
+
+
+
+/*BROWSE PAGE*/
+.shoe_title {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.shoe_price {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.shoe_location{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.shoe_brand{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.shoe_size{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+
