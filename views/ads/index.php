@@ -34,7 +34,7 @@ $shoes = Shoe::all();
 
 				<div class="row">
 					<div id='shoe_box' class="col-xs-6 col-md-4">
-						<a href class="shoe_title"><?= $shoe->title ?></a>
+						<a href = "/show?id=<?=$shoe->id ?>" class="shoe_title"><?= $shoe->title ?></a>
 						<p class="shoe_photo"><img src="<?= $shoe->image_location?>" height="250px" width="250px"></p>
 						<p class="shoe_price">$<?= $shoe->price ?></p>
 						<p class="shoe_location"><?= $shoe->location ?></p>
