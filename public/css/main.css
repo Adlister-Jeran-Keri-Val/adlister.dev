@@ -1,41 +1,37 @@
 body {
 	background-color: white;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 1em;
 	font-weight: 500px;
-	padding: 0;
-	margin: 0;
 }
 
 h1 {
 	background-color: white;
-	font-size: 8em;
+	font-size: 11em;
 	font-family: 'Satisfy', cursive;
 	color: black;
 	text-align: center;
-	margin-top: -1px
-	/*padding-bottom: -50px;*/
 }
 
 h2 {
-	/*margin-top: -1px;*/
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 3em;
 	text-align: center;	
+	font-weight: bold;
 }
 
 #welcome {
 	background-color: white;
-	padding: 0;
-	margin: 0;
+}
+
+.section-title {
+	/*margin-top: 40px;*/
 }
 
 .intro {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 1.3em;
+	font-size: 1.6em;
 	font-weight: bold;
 	color: black;
-	margin-top: -100px;
 	padding-bottom: 20px;
 	text-align: center;
 }
@@ -59,68 +55,52 @@ h2 {
 	font-size: 1.5em;
 }
 
-
-
-.column-center {
-	display: inline-block;
-	overflow: hidden;
-	width: 30%;
-	height: 500px;
-	text-align: center;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 37px;
-	margin: 0px 36px 0px 42px;
-
-}
-
-.column-left {
-	float: left;
-	width: 30%;
-	height: 500px;
-	text-align: center;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 37px;
-	margin: 0px 0px 0px 23px;
-}
-
-.column-right {
-	float: right;
-	width: 30%;
-	height: 500px;
-	text-align: center;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 37px;
-	margin: 0px 18px 0px 0px;
-}
-
 .see_all {
 	text-align: center;
 	font-size: 1.5em;
-	margin-top: -45px;
+	/*margin-top: -45px;*/
+}
+
+#columns {
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.formal {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50px;
+	height: 500px;
+}
+
+.casual {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50px;
+	height: 500px;
+}
+
+.lounging {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50px;
+	height: 500px;
 }
 
 .nav {
   background-color: black;
-  width: 102%;
-  margin-top: -90px;
-  margin-bottom: 10px;
-  margin-left: -15px;
-  /*margin-right: -100px;*/
+  width: 100%;
+  margin-top: -20px;
   text-transform: uppercase;
-  font-size: 19px;
+  font-size: 1.3em;
   font-family: 'BenchNine', sans-serif;
 }
 
 .nav ul {
   list-style: none;
   text-align: center;
-  margin-right: 100px;
-  padding: 0;
-  margin: 0;
 }
+
 .nav li {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1em;
@@ -155,7 +135,6 @@ h2 {
 
 .nav li {
     display: inline-block;
-    margin-right: -4px;
 }
 
 @media (min-width: 768px) {
@@ -169,11 +148,9 @@ h2 {
 	background-color: black;
 	color: white;
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: bolder;
-	margin-top: 17px;
-	padding-bottom: 14px;
-	height: 25px;
+	height: 55px;
 }
 
 #third_section {
@@ -185,48 +162,53 @@ h2 {
 }
 
 .log_in {
-	/*margin-top: -95px;*/
+	margin-bottom: 30px;
 }
 
+/*LOG IN BOX*/
 #log_in_border_box {
-    width: 20%;
+    width: 37%;
     background-color: black;
     color: white;
-    /*margin: 0 0 0 382px;*/
-    height: 412px;
+    height: 375px;
     border-style: solid;
     border-width: 2px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: auto;
-    /*vertical-align: middle;*/
-    /*display: inline-block;*/
 }
 
 #log_in_box {
-	text-align: center;
+	text-align: left;
 	font-size: 1.3em;
 }
 
 #log_in_group {
-	font-size: .85em;
-	margin-left: -150px;
-	margin-top: -30px;
+	font-size: 1em;
+	margin-left: -21%;
 }
 
 #email_user {
-	margin-right: -150px;
-	height: 19px;
-	width: 50%;
+	height: 31px;
+	margin-top: -55px;
+	width: 120%;
+	/*margin-left: -23%;*/
 }
 
 #log_in_password {
-	margin-right: -150px;
-	height: 19px;
-	width: 50%;
+	height: 31px;
+	margin-top: -55px;
+	width: 120%;
+	/*margin-left: -23%;*/
 }
+
+.login_button {
+	width: 200px;
+}
+
+.create_account_button {
+	width: 200px;
+	margin-left: -15px;
+}
+/*END LOG IN BOX*/
 
 button {
 	border-style: solid;
@@ -236,123 +218,81 @@ button {
 	color: white;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: .8em;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
 }
 
-/*.create_account_button {
-	border-style: solid;
-	border-width: 1px;
-	border-color: white;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-}*/
-
-/*#username {
-
-}
-
-#password {
-
-}*/
-
+/*SIGN UP BOX*/
 #sign_up_border_box {
-    width: 24%;
+	 width: 37%;
     background-color: black;
     color: white;
-    /*margin: 0 0 0 382px;*/
-    height: 535px;
+    height: 650px;
     border-style: solid;
     border-width: 2px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: auto;
-    /*vertical-align: middle;*/
-    /*display: inline-block;*/
 }
 
 #sign_up_group {
-	font-size: 1.09em;
-	margin-left: -200px;
-	margin-top: 0px;
+	font-size: 1.3em;
+	margin-left: -65%;
 }
 
 #email_sign_up_group {
-	font-size: 1.09em;
-	margin-left: -231px;
-	margin-top: 0px;
+	font-size: 1.3em;
+	margin-left: -72%;
+}
+
+#confirm_sign_up_group {
+	font-size: 1.3em;
+	margin-left: -51%;
 }
 
 #sign_up_name {
-	margin-right: -200px;
-	margin-bottom: 8px;
-	height: 19px;
+	height: 31px;
 	width: 50%;
-}
-
-#sign_up_username {
-	margin-right: -200px;
-	margin-bottom: 8px;
-	height: 19px;
-	width: 50%;
+	margin-left: 45%;
 }
 
 #sign_up_email {
-	margin-right: -230px;
-	margin-bottom: 8px;
-	height: 19px;
-	width: 47.5%;
+	height: 31px;
+	width: 48%;
+	margin-left: 47%;
+}
+
+#sign_up_username {
+	height: 31px;
+	width: 50%;
+	margin-left: 45%;
 }
 
 #sign_up_password {
-	margin-right: -200px;
-	margin-bottom: 8px;
-	height: 19px;
+	height: 31px;
 	width: 50%;
+	margin-left: 45%;
+}
+
+#confirm_sign_up_password {
+	height: 31px;
+	width: 55%;
+	margin-left: 40%;
 }
 
 .sign_up_info {
-	margin-top: -30px;
-}
-
-.log_in_button {
-	font-size: 1.1em;
 }
 
 .sign_up_button {
 	font-size: 1.1em;
+	width: 200px;
+}
+
+.log_in_button {
+	font-size: 1.1em;
+	width: 200px;
 }
 
 
 
-/*BROWSE PAGE*/
-.shoe_title {
-	font-size: 1.2em;
-	text-align: center;
-}
 
-.shoe_price {
-	font-size: 1.2em;
-	text-align: center;
-}
 
-.shoe_location{
-	font-size: 1.2em;
-	text-align: center;
-}
-
-.shoe_brand{
-	font-size: 1.2em;
-	text-align: center;
-}
-
-.shoe_size{
-	font-size: 1.2em;
-	text-align: center;
-}
 
 

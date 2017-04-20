@@ -6,9 +6,10 @@ require_once __DIR__ . '/../bootstrap.php';
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- BOOTSTRAP CORE CSS -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>ShoeLaLa</title>
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=BenchNine:300|Yanone+Kaffeesatz:200|Satisfy" rel="stylesheet">
 </head>

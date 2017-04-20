@@ -6,7 +6,7 @@
 <body>
 	<div id="footer">
 		<hr>
-		<p>CREATED BY: BOBBY CALIFORNIA, BOBBY SOUFLAY, AND LIL BOBBY TABLES | 2017</p>
+		<p>CREATED BY: Kerington, Kawhi Leonard's GF, and Yeezy. | 2017</p>
 	</div>
 
 </body>
