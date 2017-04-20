@@ -9,11 +9,11 @@ $shoe = Shoe::find($_GET['id']);
 
 
 <div class='shoe_box'>
-	<h4><?= $shoe->title ?></h4>
-	<img src="<?= $shoe->image_location?>" height="100px" width="100px">
-	<p>$<?= $shoe->price ?></p>
-	<p><?= $shoe->location ?></p>
-	<p><?= $shoe->brand ?></p>
-	<p><?= $shoe->size ?></p>
+	<h2 class="shoe_title"><?= $shoe->title ?></h2>
+	<center><img src="<?= $shoe->image_location?>" height="350px" width="350px"></center>
+	<p class="show_shoe_price">ASKING: $<?= $shoe->price ?></p>
+	<p class="show_shoe_location">LOCATED: <?= $shoe->location ?></p>
+	<p class="show_shoe_brand">BRAND: <?= $shoe->brand ?></p>
+	<p class="show_shoe_size"=>SIZE: <?= $shoe->size ?></p>
 </div>
-<a href="/editshoe" class="log_in_button"> EDIT Listing </a>
+<a href="/editshoe" class="log_in_button"> CLICK HERE TO EDIT YOUR LISTING </a>

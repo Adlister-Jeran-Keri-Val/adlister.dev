@@ -1,7 +1,12 @@
 body {
-	background-color: white;
+	/*background-image: url("/img/gplay.jpg");
+	background-color: black;*/
 	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
 	font-weight: 500px;
+}
+
+.header {
+	background-color: white;
 }
 
 h1 {
@@ -19,19 +24,47 @@ h2 {
 	font-weight: bold;
 }
 
+a {
+	color: black;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+    color: #427561;
+    
+}
+
+/* mouse over link */
+a:hover {
+    color: #466B67;
+
+    
+}
+
+/* selected link */
+a:active {
+    color: #891818;
+}
+
 #welcome {
 	background-color: white;
 }
 
 .section-title {
-
+	color: black;
 }
 
 .intro {
 	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
 	font-size: 1.6em;
 	font-weight: bold;
-	color: black;
+	color: #466B67;
 	padding-bottom: 20px;
 	text-align: center;
 }
@@ -47,7 +80,6 @@ h2 {
 }
 
 #categories_section {
-	
 }
 
 .category_text {
@@ -69,22 +101,40 @@ h2 {
 .formal {
 	border-style: solid;
 	border-width: 1px;
-	border-radius: 50px;
-	height: 500px;
+	font-family: 'Satisfy', 'Apple Chancery', cursive;
+	text-align: right;
+	font-size: 1.7em;
+	background-image: url("/img/shoes4.jpg");
+	background-size: cover;
+	background-position: center center;
+	width: 320px;
+	height: 320px;
 }
 
 .casual {
 	border-style: solid;
 	border-width: 1px;
-	border-radius: 50px;
-	height: 500px;
+	font-family: 'Satisfy', 'Apple Chancery', cursive;
+	text-align: right;
+	font-size: 1.7em;
+	background-image: url("/img/casual.jpg");
+	background-size: cover;
+	background-position: center center;
+	width: 320px;
+	height: 320px;
 }
 
 .lounging {
 	border-style: solid;
 	border-width: 1px;
-	border-radius: 50px;
-	height: 500px;
+	font-family: 'Satisfy', 'Apple Chancery', cursive;
+	text-align: right;
+	font-size: 1.7em;
+	background-image: url("/img/lounging.jpg");
+	background-size: cover;
+	background-position: center center;
+	width: 320px;
+	height: 320px;
 }
 
 .nav {
@@ -167,46 +217,31 @@ h2 {
 
 /*LOG IN BOX*/
 #log_in_border_box {
-    width: 37%;
     background-color: black;
     color: white;
-    height: 375px;
+    height: 400px;
     border-style: solid;
     border-width: 2px;
-    text-align: center;
-}
-
-#log_in_box {
-	text-align: left;
-	font-size: 1.3em;
+    text-align: left;
+    font-size: 1.3em;
 }
 
 #log_in_group {
 	font-size: 1em;
-	margin-left: -21%;
 }
 
 #email_user {
 	height: 31px;
-	margin-top: -55px;
-	width: 120%;
-	/*margin-left: -23%;*/
 }
 
 #log_in_password {
 	height: 31px;
-	margin-top: -55px;
-	width: 120%;
-	/*margin-left: -23%;*/
 }
 
 .login_button {
-	width: 200px;
 }
 
 .create_account_button {
-	width: 200px;
-	margin-left: -15px;
 }
 /*END LOG IN BOX*/
 
@@ -291,6 +326,62 @@ button {
 	width: 200px;
 }
 
+
+/*CREATE PAGE*/
+
+#create_border_box {
+	width: 35%;
+    background-color: black;
+    color: white;
+    height: 750px;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.create_listing_button {
+	font-size: 1.1em;
+	width: 200px;
+}
+/*END CREATE PAGE*/
+
+
+/*BROWSE PAGE*/
+#shoe_box {
+	border-style: solid;
+	border-width: 1px;
+	width: 300px;
+	height: 300px;
+	border-radius: 30px;
+	margin: 0 auto;
+}
+
+.shoe_title {
+	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+	font-size: 2em;
+	text-align: center;	
+	font-weight: bold;
+}
+.shoe_price, .shoe_location, .shoe_brand, .shoe_size {
+	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+/*SHOW PAGE*/
+.show_shoe_title, .show_shoe_price, .show_shoe_location, .show_shoe_brand, .show_shoe_size {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+
+
+
+/*END SHOW PAGE*/
 
 
 

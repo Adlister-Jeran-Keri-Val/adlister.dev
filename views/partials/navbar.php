@@ -1,4 +1,3 @@
-<body class="news">
   <header>
     <div class="nav">
       <ul>
@@ -9,4 +8,3 @@
       </ul>
     </div>
   </header>
-</body>

@@ -15,19 +15,36 @@
     <section id="categories_section">
         <div class="row">
             <h2 class="section-title">CATEGORIES</h2>
-            <p class="see_all"> <a href="/browse">See all... </a></p>
-
+            <!-- FORMAL -->
             <div class="row" id="columns">
-              <div class="col-xs-4"><div class="formal">FORMAL</div></div>
-              <div class="col-xs-4"><div class="casual">CASUAL</div></div>
-              <div class="col-xs-4"><div class="lounging">LOUNGING</div></div>
+                <a style="display:block" href="/unitedStates.php">
+                    <div class="col-xs-4">
+                        <div class="formal"><br>formal &nbsp;
+                        </div>
+                    </div>
+                </a>
+                <!-- CASUAL -->
+                <a style="display:block" href="/unitedStates.php">
+                    <div class="col-xs-4">
+                        <div class="casual"><br>casual &nbsp;
+                        </div>
+                    </div>
+                </a>
+                <!-- LOUNGING -->
+                <a style="display:block" href="/unitedStates.php">
+                    <div class="col-xs-4">
+                        <div class="lounging"><br>lounging &nbsp;
+                        </div>
+                    </div>
+                </a>
             </div>
-
+            <br>
+            <p class="see_all"> <a href="/browse">VIEW ALL </a></p>
         </div>
 
     </section>
-
+<!-- 
     <section id="third_section">
         <br><br><br><br><br><br>HERE'S ANOTHER SECTION.
-    </section>
+    </section> -->
 </div>
