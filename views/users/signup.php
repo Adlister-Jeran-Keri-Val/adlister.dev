@@ -1,7 +1,7 @@
 <div class="container">
     <section id="login">
         <div class="row">
-            <div id = "sign_up_border_box" class="col-md-6 col-md-offset-3">
+            <div id = "sign_up_border_box" class="col-xs-12 col-xs-offset-4">
 
                 <h2 class="sign_up">SIGN UP</h2>
                     <p class="sign_up_info">FILL OUT THE INFO BELOW
@@ -40,14 +40,18 @@
                         PASSWORD<br>
                             <input type="password" class="form-control" id="sign_up_password" name="password" data-required>
                         </div>
+                        <div class="form-group" id= "confirm_sign_up_group">
+                        CONFIRM PASSWORD<br>
+                            <input type="confirm_password" class="form-control" id="confirm_sign_up_password" name="confirm_password" data-required>
+                        </div>
 
                         <div class="row">
-                            <div class="col-sm-6">
+                            <!-- <div class="col-sm-6"> -->
                             <br><br>
                                 <button type="submit" class="sign_up_button">SIGN UP</button>
                             </div>
                             <br>
-                            <div class="col-sm-6 text-right">
+                            <!-- <div class="col-sm-6"> -->
                                 <button a href="/login" class="log_in_button"> GO TO LOG IN </button>
                             </div>
                     </div>
