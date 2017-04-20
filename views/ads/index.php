@@ -8,32 +8,17 @@ $shoes = Shoe::all();
 
 
 ?>
-<!DOCTYPE html>
-	<html lang="en-us">
-	<head>
-		<meta charset="utf-8">
-	    <meta http-equiv="x-ua-compatible" content="ie=edge">
-		
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<meta name="description" content="">
-		<meta name="Keywords" content="">
-	    <meta name="author" content="">
-		<title></title>
 
-	</head>
 	<body>
 		<main class="container">
 		<h2 id='welcomez'>Show all shoes</h2>
 		<div class = "box">
 			
-
 			<section class="parks">
-
+				<?php foreach($shoes as $shoe): ?>
 					
-					<?php foreach($shoes as $shoe): ?>
-					
-						<div class='shoe_box'>
+<!--  YO GIRL DIS MY OG STUFF I JUST COMMENTED IT OUT JUST IN CASE U CAN DELETE IT IF YOU GET ERRYTHING TO WERK -->
+<!-- 						<div class='shoe_box'>
 							<a href = "/show?id=<?=$shoe->id ?>"><?= $shoe->title ?></a>
 							<img src="<?= $shoe->image_location?>" height="100px" width="100px">
 							<p>$<?= $shoe->price ?></p>
@@ -42,9 +27,23 @@ $shoes = Shoe::all();
 							<p><?= $shoe->size ?></p>
 						
 						</div>
-					<?php endforeach; ?>	
+		
 				</div>
+ -->
+<!-- USE BOOTSTRAP TO CREATE THE COLUMNS FOR THIS! 3 COLUMNS PER ROW! -->
 
+				<div class="row">
+					<div id='shoe_box' class="col-xs-6 col-md-4">
+						<a href class="shoe_title"><?= $shoe->title ?></a>
+						<p class="shoe_photo"><img src="<?= $shoe->image_location?>" height="250px" width="250px"></p>
+						<p class="shoe_price">$<?= $shoe->price ?></p>
+						<p class="shoe_location"><?= $shoe->location ?></p>
+						<p class="shoe_brand"><?= $shoe->brand ?></p>
+						<p class="shoe_size"><?= $shoe->size ?></p>
+					</div>
+				<?php endforeach; ?>
+				</div>		
+		</div>
 
 			</section>
 			</div>

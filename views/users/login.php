@@ -1,9 +1,9 @@
 <div class="container">
     <section id="login">
         <div class="row">
-            <div id = "log_in_border_box" class="col-xs-6 col-xs-offset-6">
+            <div id = "log_in_border_box" class="col-xs-12 col-xs-offset-4">
                 <h2 class="log_in">LOG IN</h2>
-
+                <br>
                 <?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
                     <div class="alert alert-danger">
                         <p class="error"><?= $_SESSION['ERROR_MESSAGE']; ?></p>
@@ -27,14 +27,14 @@
                         </div>
                         <div class="form-group" id= "log_in_group">
                         <br><br>PASSWORD<br>
-                            <input type="password" class="form-control" id="password" name="password" data-required>
+                            <input type="password" class="form-control" id="log_in_password" name="password" data-required>
                         </div>
                         <div class="row">
-                            <div class="col-sm-6">
+                            <!-- <div class="col-sm-6"> -->
                             <br><br>
-                                <button a href="/account" class="log_in_button"> LOG IN </button>
+                                <button a href="/account" class="login_button"> LOG IN </button>
                             </div>
-                            <div class="col-sm-6 text-right">
+                            <!-- <div class="col-sm-6"> -->
                             <br>
                                 <button a href="/signup" class="create_account_button"> CREATE ACCOUNT </button>
                             </div>
