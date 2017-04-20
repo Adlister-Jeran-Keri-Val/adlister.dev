@@ -1,7 +1,12 @@
 body {
-	background-color: white;
+	/*background-image: url("/img/gplay.jpg");
+	background-color: black;*/
 	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
 	font-weight: 500px;
+}
+
+.header {
+	background-color: white;
 }
 
 h1 {
@@ -37,14 +42,14 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: #891818;
+    color: #466B67;
 
     
 }
 
 /* selected link */
 a:active {
-    color: #466B67;
+    color: #891818;
 }
 
 #welcome {
@@ -52,13 +57,14 @@ a:active {
 }
 
 .section-title {
+	color: black;
 }
 
 .intro {
 	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
 	font-size: 1.6em;
 	font-weight: bold;
-	color: black;
+	color: #466B67;
 	padding-bottom: 20px;
 	text-align: center;
 }
@@ -93,44 +99,42 @@ a:active {
 }
 
 .formal {
-	background-color: black;
-	color: white;
-	font-family: 'Satisfy', 'Apple Chancery', cursive;
-	font-size: 2em;
-	border-radius: 30px;
-/*	background-image: url("../public/img/formal.jpg");
-	width: 200px;
-	height: 200px;*/
-/*	color: white;
 	border-style: solid;
 	border-width: 1px;
-	height: 500px;*/
+	font-family: 'Satisfy', 'Apple Chancery', cursive;
+	text-align: right;
+	font-size: 1.7em;
+	background-image: url("/img/shoes4.jpg");
+	background-size: cover;
+	background-position: center center;
+	width: 320px;
+	height: 320px;
 }
 
 .casual {
-	background-color: black;
-	color: white;
-	font-family: 'Satisfy', 'Apple Chancery', cursive;
-	font-size: 2em;
-	border-radius: 30px;
-	/*background-color: black;
-	color: white;
 	border-style: solid;
 	border-width: 1px;
-	height: 500px;*/
+	font-family: 'Satisfy', 'Apple Chancery', cursive;
+	text-align: right;
+	font-size: 1.7em;
+	background-image: url("/img/casual.jpg");
+	background-size: cover;
+	background-position: center center;
+	width: 320px;
+	height: 320px;
 }
 
 .lounging {
-	background-color: black;
-	color: white;
-	font-family: 'Satisfy', 'Apple Chancery', cursive;
-	font-size: 2em;
-	border-radius: 30px;
-	/*background-color: black;
-	color: white;
 	border-style: solid;
 	border-width: 1px;
-	height: 500px;*/
+	font-family: 'Satisfy', 'Apple Chancery', cursive;
+	text-align: right;
+	font-size: 1.7em;
+	background-image: url("/img/lounging.jpg");
+	background-size: cover;
+	background-position: center center;
+	width: 320px;
+	height: 320px;
 }
 
 .nav {
@@ -368,17 +372,10 @@ button {
 }
 
 /*SHOW PAGE*/
-.shoe_price {
-
-}
-.shoe_location {
-
-}
-.shoe_brand {
-
-}
-.shoe_size {
-	
+.show_shoe_title, .show_shoe_price, .show_shoe_location, .show_shoe_brand, .show_shoe_size {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
 }
 
 
