@@ -1,4 +1,4 @@
-<!--Page for creating new advertisement listings-->
+<!--Page for creating new advertisement li  stings-->
 
 
 <!-- MAKE IT SO THAT AN INDIVIDUAL CAN ONLY VIEW THIS PAGE IF THEIR LOGGED IN OR ELSE REDIRECT TO LOGIN PAGE -->

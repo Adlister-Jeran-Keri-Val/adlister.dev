@@ -16,4 +16,4 @@ $shoe = Shoe::find($_GET['id']);
 	<p><?= $shoe->brand ?></p>
 	<p><?= $shoe->size ?></p>
 </div>
-<a href="/editshoe" class="log_in_button"> EDIT </a>
+<a href="/editshoe" class="log_in_button"> EDIT Listing </a>
