@@ -29,7 +29,7 @@ require_once __DIR__ . '/../../models/Shoes.php';
         <li class="news"><a href="/logout">LOGOUT</a></li>
        <form class="form-horizontal" method="POST" action="/browse">
         <input type="text" name="search" class="form-control" id="name" placeholder=>
-        <button type = 'submit'> GO </button>
+        <button type = 'submit' class="go_button"> GO </button>
         </form>
         
       </ul>
