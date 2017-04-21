@@ -1,50 +1,46 @@
 <div class="container">
-
     <section id="login">
-
         <div class="row">
-
-            <h1 class="section-title">Login To OooLister</h1>
-
-            <?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
-                <div class="alert alert-danger">
-                    <p class="error"><?= $_SESSION['ERROR_MESSAGE']; ?></p>
-                </div>
-                <?php unset($_SESSION['ERROR_MESSAGE']); ?>
-            <?php endif; ?>
-            <?php if (isset($_SESSION['SUCCESS_MESSAGE'])) : ?>
-                <div class="alert alert-success">
-                    <p class="success"><?= $_SESSION['SUCCESS_MESSAGE']; ?></p>
-                </div>
-                <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
-            <?php endif; ?>
-
-            <div class="col-md-6 col-md-offset-3">
-
-                <p>Login with your email/username and password</p>
-
-                <form method="POST" action="" data-validation data-required-message="This field is required">
-
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="email_user" name="email_user" placeholder="Email or Username" data-required>
+            <div id = "log_in_border_box" class="col-xs-4 col-xs-offset-4">
+                <h2 class="log_in">LOG IN</h2>
+                <br>
+                <?php if (isset($_SESSION['ERROR_MESSAGE'])) : ?>
+                    <div class="alert alert-danger">
+                        <p class="error"><?= $_SESSION['ERROR_MESSAGE']; ?></p>
                     </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" data-required>
+                    <?php unset($_SESSION['ERROR_MESSAGE']); ?>
+                <?php endif; ?>
+                <?php if (isset($_SESSION['SUCCESS_MESSAGE'])) : ?>
+                    <div class="alert alert-success">
+                        <p class="success"><?= $_SESSION['SUCCESS_MESSAGE']; ?></p>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <button type="submit" class="btn btn-primary">Login</button>
+                    <?php unset($_SESSION['SUCCESS_MESSAGE']); ?>
+                <?php endif; ?>
+
+                <div class="col-md-8 col-md-offset-2" id="log_in_box">
+
+                    <form method="POST" action="" data-validation data-required-message="This field is required">
+
+                        <div class="form-group" id= "log_in_group">
+                            <input type="text" class="form-control" id="email_user" name="email_user" data-required>
+                            <label>USERNAME</label>
                         </div>
-                        <div class="col-sm-6 text-right">
-                            <a href="/signup" class="btn btn-success">Go To Signup</a>
+                        <div class="form-group" id= "log_in_group">
+                            <input type="password" class="form-control" id="log_in_password" name="password" data-required>
+                            <label>PASSWORD</label>
                         </div>
-                    </div>
-                </form>
-
+                        <div class="form-group">
+                                <button a href="/account" class="login_button"> LOG IN </button>
+                            <!-- </div> -->
+                        </div>
+                        <div class="form-group">
+                                <button a href="/signup" class="create_account_button"> CREATE ACCOUNT </button>
+                                <br>
+                            <!-- </div> -->
+                        </div>
+                    </form>
+                </div>
             </div>
-
         </div>
-
     </section>
-
 </div>

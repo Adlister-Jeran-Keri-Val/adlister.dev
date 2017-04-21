@@ -1,0 +1,472 @@
+body {
+
+	/*background-image: url("/img/gplay.jpg");
+	background-color: black;*/
+	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+	font-weight: 500px;
+
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+
+}
+
+.header {
+	background-color: white;
+}
+
+h1 {
+	background-color: white;
+	font-size: 11em;
+	font-family: 'Satisfy', 'Apple Chancery', cursive;
+	color: black;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+	font-size: 3em;
+	text-align: center; 
+	font-weight: bold;
+}
+
+a {
+	color: black;
+}
+
+/* unvisited link */
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+	color: white;
+	
+}
+
+/* mouse over link */
+a:hover {
+	color: #466B67;
+
+	
+}
+
+/* selected link */
+a:active {
+	color: #891818;
+}
+
+#welcome {
+	background-color: white;
+}
+
+.section-title {
+	color: black;
+}
+
+.intro {
+	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #466B67;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.intro_login {
+	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+	font-size: 1.6em;
+	font-weight: : bold;
+	color: black;
+	margin-top: -70px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#categories_section {
+}
+
+.category_text {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.see_all {
+	text-align: center;
+	font-size: 1.5em;
+	/*margin-top: -45px;*/
+}
+
+#columns {
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.formal {
+	border-style: solid;
+	border-width: 1px;
+	font-family: 'Satisfy', 'Apple Chancery', cursive;
+	text-align: right;
+	font-size: 1.7em;
+	background-image: url("/img/shoes4.jpg");
+	background-size: cover;
+	background-position: center center;
+	width: 320px;
+	height: 320px;
+}
+
+.casual {
+	border-style: solid;
+	border-width: 1px;
+	font-family: 'Satisfy', 'Apple Chancery', cursive;
+	text-align: right;
+	font-size: 1.7em;
+	background-image: url("/img/casual.jpg");
+	background-size: cover;
+	background-position: center center;
+	width: 320px;
+	height: 320px;
+}
+
+.lounging {
+	border-style: solid;
+	border-width: 1px;
+	font-family: 'Satisfy', 'Apple Chancery', cursive;
+	text-align: right;
+	font-size: 1.7em;
+	background-image: url("/img/lounging.jpg");
+	background-size: cover;
+	background-position: center center;
+	width: 320px;
+	height: 320px;
+}
+
+.nav {
+  background-color: black;
+  width: 100%;
+  margin-top: -20px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-family: 'BenchNine', 'Arial Narrow', sans-serif;
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nav li {
+  font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+  font-size: 1em;
+  line-height: 30px;
+  height: 30px;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+ 
+.nav a:hover {
+  color: white; /*change nav bar TEXT color when hovered*/
+  outline: none;
+}
+ 
+.nav a.active {
+  color: black;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+	width: 120px;
+	border-bottom: none;
+	height: 35px;
+	line-height: 45px;
+	font-size: 1em;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+	padding: 20px 0;
+	border-bottom: none;
+	letter-spacing: .5px;
+ }
+
+#footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bolder;
+	height: 55px;
+}
+
+#third_section {
+	text-align: center;
+	font-size: 2em;
+	padding-top: 10px;
+	height: 500px;
+	width: 100%;
+}
+
+.log_in {
+	margin-bottom: 30px;
+}
+
+/*LOG IN BOX*/
+#log_in_border_box {
+
+	background-color: black;
+	color: white;
+	border-style: solid;
+	border-width: 2px;
+	text-align: left;
+	font-size: 1.3em;
+
+
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+}
+
+#log_in_group {
+	font-size: 1em;
+}
+
+#email_user {
+	height: 31px;
+}
+
+#log_in_password {
+	height: 31px;
+}
+
+.login_button {
+}
+
+.create_account_button {
+}
+/*END LOG IN BOX*/
+
+button {
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	background-color: black;
+	color: white;
+	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+	font-size: .8em;
+	width: 100%;
+}
+
+/*SIGN UP BOX*/
+#sign_up_border_box {
+	width: 37%;
+	background-color: black;
+	color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	text-align: center;
+}
+
+#sign_up_group {
+	font-size: 1.3em;
+	margin-left: -65%;
+}
+
+#email_sign_up_group {
+	font-size: 1.3em;
+	margin-left: -72%;
+}
+
+#confirm_sign_up_group {
+	font-size: 1.3em;
+	margin-left: -51%;
+}
+
+#sign_up_name {
+	height: 31px;
+	width: 50%;
+	margin-left: 45%;
+}
+
+#sign_up_email {
+	height: 31px;
+	width: 48%;
+	margin-left: 47%;
+}
+
+#sign_up_username {
+	height: 31px;
+	width: 50%;
+	margin-left: 45%;
+}
+
+#sign_up_password {
+	height: 31px;
+	width: 50%;
+	margin-left: 45%;
+}
+
+#confirm_sign_up_password {
+	height: 31px;
+	width: 55%;
+	margin-left: 40%;
+}
+
+.sign_up_info {
+
+}
+
+.sign_up_button {
+	font-size: 1.1em;
+	width: 200px;
+}
+
+.log_in_button {
+	font-size: 1.1em;
+	width: 200px;
+}
+
+
+/*CREATE PAGE*/
+
+#create_border_box {
+	width: 35%;
+	background-color: black;
+	color: white;
+	border-style: solid;
+	border-width: 2px;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.create_listing_button {
+	font-size: 1.1em;
+	width: 200px;
+}
+
+.category_drop_down {
+	width: 200px;
+	height: 35px;
+	color: black;
+}
+
+.form-control {
+	font-size: 1em;
+	font-weight: 900px;
+	font-weight: bolder;
+	color: black;
+	width: 200px;
+}
+
+.item_description_textarea {
+	color: black;
+}
+/*END CREATE PAGE*/
+
+
+/*BROWSE PAGE*/
+#shoe_box {
+	background-color: black;
+	color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	width: 300px;
+	margin: 0 auto;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+#shoe_box:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+
+}
+
+.shoe_title {
+	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+	font-size: 2.2em;
+	text-align: center; 
+	font-weight: bold;
+}
+.shoe_price, .shoe_location, .shoe_brand, .shoe_size {
+	font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+/*SHOW PAGE*/
+.show_shoe_title, .show_shoe_price, .show_shoe_location, .show_shoe_brand, .show_shoe_size {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+
+
+
+/*END SHOW PAGE*/
+
+
+
+
+
+

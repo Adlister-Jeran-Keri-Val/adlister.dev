@@ -125,6 +125,8 @@ abstract class Model {
 
         $query = "INSERT INTO " . static::$table . " ({$columns}) VALUES ({$valuePlaceholders})";
 
+        // var_dump($query);
+
         $stmt = self::$dbc->prepare($query);
 
         foreach ($this->attributes as $column => $value) {
@@ -208,6 +210,31 @@ abstract class Model {
         return $instance;
     }
 
+    public static function findC($category)
+    {
+        // Get connection to the database
+        self::dbConnect();
+
+        //Create select statement using prepared statements
+        $query = 'SELECT * FROM ' . static::$table . ' WHERE category = :category';
+
+        $stmt = self::$dbc->prepare($query);
+        $stmt->bindValue(':category', $category, PDO::PARAM_INT);
+        $stmt->execute();
+
+        //Store the resultset in a variable named $result
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        $instance = null;
+        // if we have a result, create a new instance
+        if ($result) {
+            $instance = new static;
+            $instance->attributes = $result;
+        }
+
+        // return either the found instance or null
+        return $instance;
+    }
 
     /**
      * Find all records in a table
@@ -225,14 +252,21 @@ abstract class Model {
         $stmt->execute();
 
         //Store the resultset in a variable named $result
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $results = $stmt->fetchAll(PDO::FETCH_OBJ);
 
         // turn each associative array into an instance of the model subclass
+        return $results;
         return array_map(function($result) {
             $instance = new static;
             $instance->attributes = $result;
             return $instance;
         }, $results);
     }
+
+    // class Shoes extends Model
+    // {
+
+
+    // }
 
 }
