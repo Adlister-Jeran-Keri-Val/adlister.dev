@@ -8,7 +8,7 @@ if (!Auth::check()){
 	die;
 }
 
-$user = User::find($_GET['id']);
+$user = User::findByUsernameOrEmail($_SESSION['IS_LOGGED_IN']);
 
 
 ?>

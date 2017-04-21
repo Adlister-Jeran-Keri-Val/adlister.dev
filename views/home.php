@@ -24,7 +24,7 @@
                     </div>
                 </a>
                 <!-- CASUAL -->
-                <a style="display:block" href="/unitedStates.php">
+                <a style="display:block" href="/browse">
                     <div class="col-xs-4">
                         <div class="casual"><br>casual &nbsp;
                         </div>
