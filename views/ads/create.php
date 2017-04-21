@@ -28,6 +28,7 @@ if(!empty($_POST)) {
 	$shoe->contact_name = Input::get('contact_name');
 	$shoe->contact_number = Input::get('contact_number');
 	$shoe->item_description = Input::get('item_description');
+	$shoe->image_location = saveUploadedImage('image');
 	$shoe->user_id = Auth::id();
 	$shoe->save();
 	header('location: /browse');
