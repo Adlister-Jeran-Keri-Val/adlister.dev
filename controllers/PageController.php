@@ -69,6 +69,9 @@ function pageController()
             break;
         case '/create':  // TODO: put routes here
             $mainView = '../views/ads/create.php';
+            break; 
+        case '/logout':  // TODO: put routes here
+            $mainView = '../views/users/logout.php';
             break;     
         default:   // displays 404 if route not specified above
             $mainView = '../views/404.php';
