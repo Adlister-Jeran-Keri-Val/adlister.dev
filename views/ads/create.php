@@ -125,11 +125,18 @@ if(!empty($_POST)) {
 		  		</div>
 	  		<?php endif; ?>
 
+
+<!-- CATEGORY -->
+
 	  		<?php if(empty($errors['category'])): ?>
 		  		<div class="form-group">
 		    		<label for="category" class="col-xs-4 control-label">CATEGORY</label>
 		    		<div class="col-xs-4">
-		      			<input type="text" name="category" class="form-control" id="category" placeholder="">
+		      			<select name="category" class="category_drop_down">
+						  <option value="volvo">FANCY</option>
+						  <option value="saab">CASUAL</option>
+						  <option value="fiat">LOUNGING</option>
+						</select>
 		    		</div>
 		  		</div>
 		  	<?php else: ?>
@@ -189,11 +196,14 @@ if(!empty($_POST)) {
 		  		</div>
 	  		<?php endif; ?>
 
+
+<!-- DESCRIPTION -->
+
 	  			<?php if(empty($errors['item_description'])): ?>
 		  		<div class="form-group">
 		    		<label for="item_description" class="col-xs-4 control-label">ITEM DESCRIPTION</label>
 		    		<div class="col-xs-4">
-		      			<input type="text" name="item_description" class="form-control" id="item_description" placeholder="">
+		      			<textarea class="item_description_textarea"></textarea>
 		    		</div>
 		  		</div>
 		  	<?php else: ?>
@@ -255,6 +265,7 @@ if(!empty($_POST)) {
 	  		<?php endif; ?>
 	  	<button type="submit" class="create_listing_button">CREATE LISTING</button>
 		</form>
+		<br>
 	</section>
 </main>
 		
