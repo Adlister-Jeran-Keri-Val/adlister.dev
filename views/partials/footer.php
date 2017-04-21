@@ -1,4 +1,4 @@
 <div id="footer">
 	<hr>
-	<p>CREATED BY: Kerington, Kawhi Leonard's GF, and Yeezy. | 2017</p>
+	<p>CREATED BY: Kerington and Kawhi Leonard's GF. | 2017</p>
 </div>
