@@ -11,7 +11,15 @@ if (!Auth::check()){
 $user = User::findByUsernameOrEmail($_SESSION['IS_LOGGED_IN']);
 
 
+// Shoe::findUserListings('4');
+
+
 ?>
 
 
-<h2> Welcome <?= $user->name ?></h2>
+<h2> Welcome <?=  $user->name ?></h2>
+
+<h2> Your Listings: </h2> 
+<!-- <?= $shoe->id?>
+ -->
+
