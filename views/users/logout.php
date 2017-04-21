@@ -2,8 +2,6 @@
 // require "../../utils/Auth.php";
 
 Auth::logout();
+header('location: /exit');
+die;
 ?>
-
-<h3> YOU'VE BEEN LOGGED OUT </h3>
-
-<h4 href = "adlister.dev"> HOME </h4>

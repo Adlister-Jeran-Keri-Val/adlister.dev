@@ -70,6 +70,9 @@ function pageController()
         case '/create':  // TODO: put routes here
             $mainView = '../views/ads/create.php';
             break; 
+        case '/exit':  // TODO: put routes here
+            $mainView = '../views/users/logout2.php';
+            break; 
         case '/logout':  // TODO: put routes here
             $mainView = '../views/users/logout.php';
             break;     
