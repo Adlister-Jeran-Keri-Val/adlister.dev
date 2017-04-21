@@ -273,12 +273,7 @@ button {
 	font-size: 1.3em;
 	margin-left: -65%;
 
-	
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
+
 }
 
 #email_sign_up_group {
@@ -360,14 +355,27 @@ button {
 #shoe_box {
 
 
-
-
 	background-color: black;
 	color: white;
 	border-style: solid;
 	border-width: 1px;
 	width: 300px;
 	margin: 0 auto;
+
+
+	    -webkit-transition: all 0.2s ease;
+       -moz-transition: all 0.2s ease;
+         -o-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+}
+
+#shoe_box:hover {
+	          -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1);
+
 }
 
 .shoe_title {
