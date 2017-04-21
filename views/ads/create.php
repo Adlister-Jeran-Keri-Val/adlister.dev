@@ -6,25 +6,33 @@
 <?php
 require_once __DIR__ . '/../../models/Shoes.php';
 
+if (!Auth::check()){
+	header('location: /login');
+	die;
+}
+
+
 
 if(!empty($_POST)) {
-$shoe = new Shoe;
-$shoe->title = Input::get('title');
-$shoe->price = Input::get('price');
-$shoe->msrp = Input::get('msrp');
-$shoe->color = Input::get('color');
-$shoe->style = Input::get('style');
-$shoe->category = Input::get('category');
-$shoe->size = Input::get('size');
-$shoe->location = Input::get('location');
-$shoe->brand = Input::get('brand');
-$shoe->shoe_condition = Input::get('shoe_condition');
-$shoe->contact_name = Input::get('contact_name');
-$shoe->contact_number = Input::get('contact_number');
-$shoe->item_description = Input::get('item_description');
-$shoe->user_id = '4';
-$shoe->save();
-		}
+	$shoe = new Shoe;
+	$shoe->title = Input::get('title');
+	$shoe->price = Input::get('price');
+	$shoe->msrp = Input::get('msrp');
+	$shoe->color = Input::get('color');
+	$shoe->style = Input::get('style');
+	$shoe->category = Input::get('category');
+	$shoe->size = Input::get('size');
+	$shoe->location = Input::get('location');
+	$shoe->brand = Input::get('brand');
+	$shoe->shoe_condition = Input::get('shoe_condition');
+	$shoe->contact_name = Input::get('contact_name');
+	$shoe->contact_number = Input::get('contact_number');
+	$shoe->item_description = Input::get('item_description');
+	$shoe->user_id = Auth::id();
+	$shoe->save();
+	header('location: /browse');
+	die;
+}
 
 ?>
 
@@ -169,14 +177,14 @@ $shoe->save();
 		  		<div class="form-group">
 		    		<label for="condition" class="col-xs-4 control-label">CONDITION</label>
 		    		<div class="col-xs-4">
-		      			<input type="text" name="condition" class="form-control" id="condition" placeholder="">
+		      			<input type="text" name="shoe_condition" class="form-control" id="condition" placeholder="">
 		    		</div>
 		  		</div>
 		  	<?php else: ?>
 				<div class="form-group has-error">
 		    		<label for="condition" class="col-xs-4 control-label">CONDITION</label>
 		    		<div class="col-xs-4">
-		      			<input type="text" name="condition" class="form-control" id="condition" placeholder="<?= $errors['condition']?>">
+		      			<input type="text" name="shoe_condition" class="form-control" id="condition" placeholder="<?= $errors['condition']?>">
 		    		</div>
 		  		</div>
 	  		<?php endif; ?>
