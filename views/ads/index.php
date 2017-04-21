@@ -16,6 +16,8 @@ $shoes = Shoe::all();
 				<div class="row">
 				<?php foreach($shoes as $shoe): ?>
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						
+						
 						<center id='shoe_box'>
 							<a href = "/show?id=<?=$shoe->id ?>" class="shoe_title">
 								<?= $shoe->title ?>

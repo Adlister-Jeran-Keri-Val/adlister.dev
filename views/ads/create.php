@@ -61,7 +61,7 @@ if(!empty($_POST)) {
 			      	</div>
 			  	</div>	
 	      	<?php endif; ?>
-			
+
 			<?php if(empty($errors['price'])): ?>
 				<div class="form-group">
 		    		<label for="location" class="col-xs-4 control-label">PRICE</label>
@@ -215,6 +215,11 @@ if(!empty($_POST)) {
 		    		</div>
 		  		</div>
 	  		<?php endif; ?>
+
+		  		<div class="form-group">
+				<label for="item_description" class="col-xs-4 control-label">ADD A PHOTO</label>
+					<div class="col-xs-4"><input type="file">
+					</div><br><br>
 
 	  			<?php if(empty($errors['location'])): ?>
 		  		<div class="form-group">
