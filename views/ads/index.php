@@ -4,7 +4,20 @@
 require_once __DIR__ . '/../../database/db_connect.php';
 require_once __DIR__ . '/../../models/Shoes.php';
 
-$shoes = Shoe::all();
+
+if(Input::has('category')){
+	$category = Input::get('category');
+	$shoes = Shoe::findByCategory($category));
+}else{
+	$shoes = Shoe::all();
+}
+
+// if (isset($_REQUEST['search'])){
+// 	$shoes = $shoe->searchItems($_REQUEST['search']);
+// }else{
+
+
+// }
 
 ?>
 <body>

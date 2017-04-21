@@ -17,21 +17,21 @@
             <h2 class="section-title">CATEGORIES</h2>
             <!-- FORMAL -->
             <div class="row" id="columns">
-                <a style="display:block" href="/unitedStates.php">
+                <a style="display:block" href="/formal">
                     <div class="col-xs-4">
                         <div class="formal"><br>formal &nbsp;
                         </div>
                     </div>
                 </a>
                 <!-- CASUAL -->
-                <a style="display:block" href="/browse">
+                <a style="display:block" href="browse?category=casual">
                     <div class="col-xs-4">
                         <div class="casual"><br>casual &nbsp;
                         </div>
                     </div>
                 </a>
                 <!-- LOUNGING -->
-                <a style="display:block" href="/unitedStates.php">
+                <a style="display:block" href="/lounge">
                     <div class="col-xs-4">
                         <div class="lounging"><br>lounging &nbsp;
                         </div>

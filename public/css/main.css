@@ -193,6 +193,10 @@ a:active {
 	letter-spacing: .5px;
  }
 
+.go_button {
+	width: 20%;
+}
+
 #footer {
 	background-color: black;
 	color: white;
