@@ -9,9 +9,13 @@ if(!empty($_POST)) {
     $user->email = Input::get('email');
     $user->username = Input::get('username');
     $user->password = Input::get('password');
-    $user->save();
-    header( 'location: /account');
-    die;
+    if (Input::get('password') === Input::get('confirm_password')){
+        $user->save();
+        header( 'location: /account');
+        die;
+    }else{
+        $errorMessage = 'Passwords do not match.';
+    }
 
 }
 
@@ -72,6 +76,11 @@ if(!empty($_POST)) {
                         CONFIRM PASSWORD<br>
                             <input type="password" class="form-control" id="confirm_sign_up_password" name="confirm_password" data-required>
                         </div>
+                        <?php if (isset($errorMessage)) : ?>
+                            <div class="alert alert-danger">
+                                <p class="error"><?= $errorMessage; ?></p>
+                            </div>
+                        <?php endif; ?>
 
                         <div class="row">
                             <!-- <div class="col-sm-6"> -->
