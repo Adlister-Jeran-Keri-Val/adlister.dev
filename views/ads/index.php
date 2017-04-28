@@ -7,7 +7,7 @@ require_once __DIR__ . '/../../models/Shoes.php';
 
 if(Input::has('category')){
 	$category = Input::get('category');
-	$shoes = Shoe::findByCategory($category));
+	$shoes = Shoe::findByCategory($category);
 }else{
 	$shoes = Shoe::all();
 }
