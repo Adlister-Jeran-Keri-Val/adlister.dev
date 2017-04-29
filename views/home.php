@@ -17,7 +17,7 @@
             <h2 class="section-title">CATEGORIES</h2>
             <!-- FORMAL -->
             <div class="row" id="columns">
-                <a style="display:block" href="/formal">
+                <a style="display:block" href="browse?category=formal">
                     <div class="col-xs-4">
                         <div class="formal"><br>formal &nbsp;
                         </div>
@@ -31,7 +31,7 @@
                     </div>
                 </a>
                 <!-- LOUNGING -->
-                <a style="display:block" href="/lounge">
+                <a style="display:block" href="browse?category=lounge">
                     <div class="col-xs-4">
                         <div class="lounging"><br>lounging &nbsp;
                         </div>

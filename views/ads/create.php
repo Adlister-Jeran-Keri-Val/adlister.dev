@@ -28,7 +28,7 @@ if(!empty($_POST)) {
 	$shoe->contact_name = Input::get('contact_name');
 	$shoe->contact_number = Input::get('contact_number');
 	$shoe->item_description = Input::get('item_description');
-	$shoe->image_location = saveUploadedImage('image');
+	
 	$shoe->user_id = Auth::id();
 	$shoe->save();
 	header('location: /browse');
@@ -218,7 +218,7 @@ if(!empty($_POST)) {
 
 		  		<div class="form-group">
 				<label for="item_description" class="col-xs-4 control-label">ADD A PHOTO</label>
-					<div class="col-xs-4"><input type="file">
+					<div class="col-xs-4"><input name ='image_location' type="file">
 					</div><br><br>
 
 	  			<?php if(empty($errors['location'])): ?>

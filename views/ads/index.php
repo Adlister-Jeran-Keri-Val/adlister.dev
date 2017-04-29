@@ -7,7 +7,7 @@ require_once __DIR__ . '/../../models/Shoes.php';
 
 if(Input::has('category')){
 	$category = Input::get('category');
-	$shoes = Shoe::findByCategory($category));
+	$shoes = Shoe::findByCategory($category);
 }else{
 	$shoes = Shoe::all();
 }
@@ -22,7 +22,7 @@ if(Input::has('category')){
 ?>
 <body>
 	<main class="container">
-		<h2 id='welcomez'>Show all shoes</h2>
+		<h2 id='welcomez'>Browse...m</h2>
 		<br>
 		<div class = "box">
 			<section class="parks">
